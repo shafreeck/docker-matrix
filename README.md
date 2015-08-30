@@ -18,6 +18,9 @@ The default password is `toor`
 
 ## Integrated tools
 
+### Default shell
+fishshell
+
 ### Editors
 vim
 emacs
@@ -29,6 +32,9 @@ nc
 nping
 ngrep
 tcpdump
+aircrack
+wget
+ssh/sshd
 
 ### Systools
 sysstat
@@ -36,3 +42,16 @@ dstat
 strace
 ltrace
 htop
+blktrace
+ab
+perf
+
+### Development
+gcc/g++/make/autotools
+cmake
+git
+
+### Language
+ruby
+golang
+python
