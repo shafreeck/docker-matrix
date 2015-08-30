@@ -23,7 +23,8 @@ RUN curl -L http://download.opensuse.org/repositories/shells:fish:release:2/Cent
 RUN yum install -y vim emacs nano
 
 # Configure vim based on shafreeck/shafreeck-vim
-RUN cd ~ && git clone https://github.com/shafreeck/shafreeck-vim.git
+RUN cd ~ && git clone https://github.com/shafreeck/shafreeck-vim.git \
+    && /root/shafreeck-vim/install
 
 # Install sys tools
 RUN yum install -y sysstat perf strace    \
