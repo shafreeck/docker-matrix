@@ -35,7 +35,7 @@ RUN yum install -y sysstat perf strace    \
                    blktrace wget w3m
 
 # Install languages
-RUN yum install -y golang ruby
+RUN yum install -y golang ruby python python-devel
 
 # Install openssh-server
 RUN yum install -y openssh-server \
