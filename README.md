@@ -9,9 +9,9 @@ you just work on multiple computers or cross  different operating systems.
 
 ## Usage
 ```
-  docker pull shafreeck/matrix:centos
-  docker run shafreeck/matrix:centos
-  ssh root@localhost -p 2222
+docker pull shafreeck/matrix:centos
+docker run -d -p 2222:22 -v $HOME:/root shafreeck/matrix:centos
+ssh root@localhost -p 2222
 ```
 
 The default password is `toor`
