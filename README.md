@@ -1,5 +1,7 @@
 # Configure once , run anywhere !
 
+[![Docker Repository on Quay.io](https://quay.io/repository/shafreeck/matrix/status "Docker Repository on Quay.io")](https://quay.io/repository/shafreeck/matrix)
+
 Matrix is a development stack environment for developers
 
 ## Introduction
@@ -15,6 +17,23 @@ ssh root@localhost -p 2222
 ```
 
 The default password is `toor`
+
+Now `shafreeck/matrix:centos` has been built on multiple platforms, you can choose what you prefer:
+
+Pull from quay.io
+```
+docker pull quay.io/shafreeck/matrix
+```
+
+If you live in china, daocloud maybe a better choice
+```
+docker pull daocloud.io/shafreeck/matrix
+```
+
+
+## Issues
+Feel free to fire an issue if you want more awesome tools to be integrated or submit a pull request if you want to share 
+your enhancement !
 
 ## Integrated tools
 
