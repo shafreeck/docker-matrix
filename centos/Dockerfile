@@ -45,5 +45,8 @@ RUN yum install -y openssh-server \
 # Set root password to 'toor'
 RUN echo toor | passwd root --stdin
 
+# Install the_silver_searcher. It is an awesome code-searching tool similar to ack, but faster
+RUN rpm -Uvh http://download.fedoraproject.org/pub/epel/7/x86_64/e/epel-release-7-5.noarch.rpm
+
 EXPOSE 22
 CMD ["/usr/sbin/sshd", "-D"]
