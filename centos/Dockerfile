@@ -28,7 +28,7 @@ RUN cd ~ && git clone https://github.com/shafreeck/shafreeck-vim.git \
 
 # Install sys tools
 RUN yum install -y sysstat perf strace    \
-                   ltrace nmap ab netstat \
+                   ltrace nmap ab net-tools \
                    tcpdump ngrep  passwd  \
                    dstat htop ack         \
                    screen tmux aircrack   \
