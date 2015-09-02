@@ -23,7 +23,7 @@ RUN curl -L http://download.opensuse.org/repositories/shells:fish:release:2/Cent
 RUN yum install -y vim emacs nano
 
 # Configure vim based on shafreeck/shafreeck-vim
-RUN cd ~ && git clone https://github.com/shafreeck/shafreeck-vim.git \
+RUN cd /root && git clone https://github.com/shafreeck/shafreeck-vim.git \
     && cd /root/shafreeck-vim/ && ./install
 
 # Install sys tools
@@ -33,12 +33,14 @@ RUN yum install -y sysstat perf strace    \
                    dstat htop ack         \
                    screen tmux aircrack   \
                    blktrace wget w3m
+# Install openssl
+RUN yum install -y openssl
 
 # Install languages
 RUN yum install -y golang ruby python python-devel
 
 # Install the pretty python shell: ipython and bpython
-RUN yum install -y python-pip && pip install ipython && pip install bpython
+#RUN yum install -y python-pip && pip install ipython && pip install bpython
 
 # Install the ruby shell: pry
 RUN gem install pry
