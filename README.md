@@ -5,6 +5,8 @@
 
 Matrix is a development stack environment for developers
 
+Want to contribute? See the [issues](https://github.com/shafreeck/cetcd/issues) and fix what you are interested in!
+
 ## Introduction
 
 Matrix supplies a consistent development environment whenever you change a computer, or
