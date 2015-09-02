@@ -37,6 +37,12 @@ RUN yum install -y sysstat perf strace    \
 # Install languages
 RUN yum install -y golang ruby python python-devel
 
+# Install the pretty python shell: ipython and bpython
+RUN yum install -y python-pip && pip install ipython && pip install bpython
+
+# Install the ruby shell: pry
+RUN gem install pry
+
 # Install openssh-server
 RUN yum install -y openssh-server \
     && sed -i "s/^#PermitRootLogin yes/PermitRootLogin yes/" /etc/ssh/sshd_config \
