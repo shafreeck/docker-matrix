@@ -1,7 +1,7 @@
-[![Stories in Ready](https://badge.waffle.io/shafreeck/docker-matrix.png?label=ready&title=Ready)](https://waffle.io/shafreeck/docker-matrix)
 # Configure once , run anywhere !
 
 [![Docker Repository on Quay.io](https://quay.io/repository/shafreeck/matrix/status "Docker Repository on Quay.io")](https://quay.io/repository/shafreeck/matrix)
+[![Stories in Ready](https://badge.waffle.io/shafreeck/docker-matrix.png?label=ready&title=Ready)](https://waffle.io/shafreeck/docker-matrix)
 
 Matrix is a development stack environment for developers
 
