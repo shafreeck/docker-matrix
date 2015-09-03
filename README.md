@@ -5,7 +5,7 @@
 
 Matrix is a development stack environment for developers
 
-Want to contribute? See the [issues](https://github.com/shafreeck/cetcd/issues) and fix what you are interested in!
+Want to contribute? See the [issues](https://github.com/shafreeck/docker-matrix/issues) and fix what you are interested in!
 
 ## Introduction
 
