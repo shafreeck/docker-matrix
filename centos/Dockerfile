@@ -24,7 +24,7 @@ RUN yum install -y vim emacs nano
 
 # Configure vim based on shafreeck/shafreeck-vim
 RUN cd /root && git clone https://github.com/shafreeck/shafreeck-vim.git \
-    && cd /root/shafreeck-vim/ && ./install
+    && cd /root/shafreeck-vim/ && yum install -y python-devel && ./install
 
 # Install sys tools
 RUN yum install -y sysstat perf strace    \
@@ -37,7 +37,7 @@ RUN yum install -y sysstat perf strace    \
 RUN yum install -y openssl
 
 # Install languages
-RUN yum install -y golang ruby python python-devel
+RUN yum install -y golang ruby
 
 # Install the pretty python shell: ipython and bpython
 #RUN yum install -y python-pip && pip install ipython && pip install bpython
