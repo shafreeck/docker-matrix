@@ -22,6 +22,9 @@ RUN curl -L http://download.opensuse.org/repositories/shells:fish:release:2/Cent
 # Install editors
 RUN yum install -y vim emacs nano
 
+# Install languages, YouCompleteMe(vim plugin) needs golang to build gocode
+RUN yum install -y golang ruby
+
 # Configure vim based on shafreeck/shafreeck-vim
 RUN cd /root && git clone https://github.com/shafreeck/shafreeck-vim.git \
     && cd /root/shafreeck-vim/ && yum install -y python-devel && ./install
@@ -35,9 +38,6 @@ RUN yum install -y sysstat perf strace    \
                    blktrace wget w3m
 # Install openssl
 RUN yum install -y openssl
-
-# Install languages
-RUN yum install -y golang ruby
 
 # Install the pretty python shell: ipython and bpython
 #RUN yum install -y python-pip && pip install ipython && pip install bpython
